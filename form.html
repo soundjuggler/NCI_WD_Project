@@ -1,0 +1,74 @@
+<!DOCTYPE html> <!--Jack Kelly's work-->
+<html>
+	<head>
+		<title>Our Form</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="https://kit.fontawesome.com/3811f767a6.js" crossorigin="anonymous"></script>
+		<script src="JS Scripts/validation.js" charset="utf-8"></script> 
+	</head>
+	<body>
+		<section class="header">
+			<nav>
+                <!---- WORKING HOME BUTTON AND NAVBAR BUTTONS ---->
+                <a href="index.html"><img src="IMAGES/kisspng-book-fly-away-home-a-day-s-work-clip-art-open-book-5abbb684efde32.5106100215222513969825.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="game.html">Minigame</a></li>
+                    </ul>
+                </div>
+                <!---- BUTTON FOR ONlY DEVICES SET TO 700px ---->
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+				<form onsubmit= "return userData()">
+					<label>Name:</label>
+					<input type="text" name="name" id="1" required/>
+					<br></br>
+					<label>School:</label>
+					<input type="text" id="2"/>
+					<br></br>
+					
+					<p class="form">How long do you spend studying at home</p>
+					<label>1 hour or less</label>
+					<input name="time" type="radio" value="Less than an hour" id="3"/>
+					<br>
+					<label>1 - 2 hours&nbsp;&nbsp;&nbsp;&nbsp;</label>
+					<input name="time" type="radio" value="1-2 hours" id="3"/>
+					<br>
+					<label>3 hours +&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+					<input name="time" type="radio" value="3 hours+" id="3"/>
+						
+					<p class="form">What is the first thing you do before studying</p>
+					<label>Turn your phone off</label>
+					<input name="study space" type="Checkbox" value="Turn your phone off" id="4"/>
+					<br>
+					<label>Get a drink &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  </label>
+					<input name="study space" type="Checkbox" value="Get a drink" id="4"/>
+					<br>
+					<label>Other&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+					<input name="study space" type="Checkbox" value="Other" id="4"/>
+						
+					<br></br>
+					<label>How do you study?</label>
+					<select id="5">
+						<option>On your phone</option>
+						<option>On a laptop</option>
+						<option>Reading over notes</option>
+					</select>
+
+					<br></br>
+					<label>Tell us how you study!</label>
+					<input type="text" id="6"/>
+					<br></br>
+						
+					<br></br>
+					<input type="submit" value="Submit" onclick="userData"/>
+					<br>
+					<input type="reset" value="reset" />
+				</form>
+			<p id="change">Blah<p>
+		</section>
+	</body>
+</html>

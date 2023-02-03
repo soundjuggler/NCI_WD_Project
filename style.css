@@ -1,0 +1,553 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+/*---- HEADER AND NAVBAR ----*/
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(IMAGES/Studybackground.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+
+}
+.nav-links{
+    flex:1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+/*---- NAVBAR ENDS ----*/
+
+/*---- TEXTBOX STARTS ----*/
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+
+/*---- BUTTON AND HOVER STARTS ----*/
+.form-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding:  12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.form-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+
+nav .fa{
+    display: none;
+}
+/*---- BUTTON AND HOVER ENDS ----*/
+
+/*---- MEDIA FOR SMALLER MOBILE DEVICES STARTS----*/
+
+@media(max-width: 700px) {
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+
+    }
+}
+
+/*---- MEDIA FOR SMALLER MOBILE DEVICES STARTS ENDS ----*/
+
+/*---- EXPERIENCE STARTS ----*/
+
+.experience{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between; 
+}
+.experience-box{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.experience-box:hover{
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+/*---- EXPERIENCE ENDS ----*/
+
+/*---- media for phone ----*/
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+/*----- GALLERY ----*/
+
+.gallery{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.gallery-box{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.gallery-box img{
+    opacity: 0.5;
+    width: 100%;
+    display: block;
+}
+
+/*---- LAYER SPAGHETTI CODE ----*/
+
+.layer1{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer1:hover{
+    background: rgba(226,0,0,0.7);
+}
+.layer1 h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    transition: 0.5s;
+}
+.layer1:hover h3{
+    bottom: 40%;
+    opacity: 1;
+}
+.layer2{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer2:hover{
+    background: rgba(226,0,0,0.7);
+}
+.layer2 h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    transition: 0.5s;
+}
+.layer2:hover h3{
+    bottom: 40%;
+    opacity: 1;
+}
+
+.layer3{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer3:hover{
+    background: rgba(226,0,0,0.7);
+}
+.layer3 h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    transition: 0.5s;
+}
+.layer3:hover h3{
+    bottom: 40%;
+    opacity: 1;
+}
+
+.layer4{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer4:hover{
+    background: rgba(226,0,0,0.7);
+}
+.layer4 h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    transition: 0.5s;
+}
+.layer4:hover h3{
+    bottom: 40%;
+    opacity: 1;
+}
+
+.layer5{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer5:hover{
+    background: rgba(226,0,0,0.7);
+}
+.layer5 h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    transition: 0.5s;
+}
+.layer5:hover h3{
+    bottom: 40%;
+    opacity: 1;
+}
+
+.layer6{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer6:hover{
+    background: rgba(226,0,0,0.7);
+}
+.layer6 h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    transition: 0.5s;
+}
+.layer6:hover h3{
+    bottom: 40%;
+    opacity: 1;
+}
+
+/*---- LAYER SPAGHETTI CODE ----*/
+
+/*---- FORM STARTS ----*/
+
+form{
+	border: 5px solid red;
+	border-radius: 5px;
+	width: 40%;
+	margin: 0 auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	background-color: #8c547f;
+}
+
+input{
+	width: 60%;
+}
+
+input[type=text]{
+	border: none;
+	border-bottom: 2px solid teal;
+}
+
+input[type=submit], [type=reset]{
+	border: 2px solid teal;
+	margin: 4px;
+	border-radius: 5px;
+}
+
+.form{
+	color: white;
+}
+
+label{
+	color: white;
+	margin: 4px;
+	border-radius: 5px;
+}
+
+.display{
+	document.getElementById("change").innerHTML = function(display);
+}
+/*---- FORM ENDS ----*/
+
+/*---- FOOTER STARTS ----*/
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.icons .fa{
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+.icons i {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.icons p {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0;
+}
+
+.footer2{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 600px;
+}
+.footer2 h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.icons2 .fa{
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+.fa-heart-o2{
+    color: #f44336;
+}
+.icons2 i {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.icons2 p {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0;
+}
+/*---- FOOTER ENDS----*/
+
+/*---- GALLERY PAGE STARTS ----*/
+
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(IMAGES/Studybackground.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+/*---- GALLERY PAGE ENDS ----*/
+
+/*---- MINIGAME START ----*/
+
+.menu{
+    float: center;  
+}
+
+.tetris{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    bottom: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.container{
+    display: flex;
+}
+
+.grid{
+    width: 200px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: yellow;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.grid div{
+    height: 20px;
+    width: 20px;
+}
+
+.tetromino{
+    background-color: blue;
+}
+
+.mini-grid{
+    margin-left: 50px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: yellow;
+}
+
+.mini-grid div{
+    height: 20px;
+    width: 20px;
+}
+
+  
+/*---- MINIGAME END ----*/ 
+

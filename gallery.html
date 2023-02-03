@@ -1,0 +1,100 @@
+<!DOCTYPE html> <!--Harry's Reilly's work-->
+<html>
+    <head>
+        <!---- ADJUSTMENT FOR MOBILE DEVICES OR SMALLER VIEWPORTS ---->
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+            <title>Tips and Resources for Studying at Home</title>
+            <link rel="stylesheet" href="style.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@700&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+            <script src="https://kit.fontawesome.com/3811f767a6.js" crossorigin="anonymous"></script>
+            <script src="JS Scripts/validation.js" charset="utf-8"></script>
+    </head>
+    <body>
+        <!---- Navbar for second page ---->
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="IMAGES/kisspng-book-fly-away-home-a-day-s-work-clip-art-open-book-5abbb684efde32.5106100215222513969825.png"></a>
+                <!---- nav links for the smaller screens here with the icons for the open and close ---->
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <!---- Navbar links for the whole desktop page for all pages ---->
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="game.html">Minigame</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Gallery</h1>
+
+        </section>
+
+		<!---- GALLERY CONTENT---->
+
+		<section class="gallery">
+			<h1>GALLERY</h1>
+			<p>Here within this Gallery, You can see some interactive images that will Aid in your Studying with Useful Notes, Tips, and Just General Overall helpful Information</p>
+		<!---- These are the images and tips section with the javascript for the onclick text further down-->
+			<div class="row">
+				<!---- The div class, images and javascript function here ---->
+				<div class="gallery-box" onclick="showText1()">
+					
+					<img src="IMAGES/hard.png">
+					<div class="layer1">
+						<h3>HELPFUL TIP 1</h3>
+					</div>
+				</div>
+				<div class="gallery-box" onclick="showText2()">
+					<img src="IMAGES/studddyyyy.png">
+					<div class="layer2">
+						<h3>HELPFUL TIP 2</h3>
+					</div>
+				</div>
+				<div class="gallery-box" onclick="showText3()">
+					<img src="IMAGES/music.png">
+					<div class="layer3">
+						<h3>HELPFUL TIP 3</h3>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="gallery-box" onclick="showText4()">
+					<img src="IMAGES/dublin.png">
+					<div class="layer4">
+						<h3>HELPFUL TIP 4</h3>
+					</div>
+				</div>
+				<div class="gallery-box" onclick="showText5()">
+					<img src="IMAGES/dublin2.png">
+					<div class="layer5">
+						<h3>HELPFUL TIP 5</h3>
+					</div>
+				</div>
+				<div class="gallery-box" onclick="showText6()">
+					<img src="IMAGES/dublin3.png">
+					<div class="layer6">
+						<h3>HELPFUL TIP 6</h3>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<!---- FOOTER ---->
+		<section class="footer">
+			<!---- Words about us to fill space ---->
+			<h4>About Us</h4>
+			<p>We are 3 first year college students putting together a culmination of our knowledge in WDD to present on here<br>We all have done equal work to achieve this and hope you enjoy it as much as we do</p>
+			<!---- icons with links to our linkedin ---->
+			<div class="icons">
+				<a href="https://www.linkedin.com/in/harry-reilly-547b7a257/"><i class="fa fa-linkedin"></i><p>Harry</p></a>
+				<a href="https://www.linkedin.com/in/cg-eie/"><i class="fa fa-linkedin"></i><p>Cole</p></a>
+				<a href="https://www.linkedin.com/in/jack-kelly-b46ab9257/"><i class="fa fa-linkedin"></i><p>Jack</p></a>
+			</div>
+			<p>Made by by Jack, Cole & Harry, NCI 2022</p>
+
+
+		</section>
+    </body>
+</html>
